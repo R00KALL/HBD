@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HBD Neshaty</title>
+  <style>
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Import Arad-Medium font for the description text */
+    @font-face {
+      font-family: 'AradMedium';
+      src: url('Arad-Medium.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Header section with a gradient background */
+    .header {
+      background: linear-gradient(to right top, #0AB1AD, #00DA7B);
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+      padding: 60px 20px;
+    }
+
+    .header h1 {
+      margin-bottom: 10px;
+      font-size: 1.8em;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      line-height: 1.4;
+      /* Apply the custom font for the description */
+      font-family: 'AradMedium', sans-serif;
+    }
+
+    /* Main content area */
+    .main-content {
+      position: relative;
+      z-index: 0;
+      padding: 0 20px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Video container to overlap the header */
+    .video-container {
+      position: relative;
+      z-index: 1;  /* Ensure the video sits in front of the header */
+      margin-top: -40px;  /* Adjust this value to control overlap */
+      text-align: center;
+    }
+
+    /* Style for the video */
+    video {
+      max-width: 350px;
+      width: 100%;
+      border-radius: 24px;
+      border: 4px solid #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with title and description -->
+  <section class="header">
+    <h1>HBD Neshaty</h1>
+    <p>پێشکەش بە بێ عەیب‌ترین؛ هونەرمەندترین</p>
+    <p>و دەنگ خۆشترین کچی دوونیا</p>
+  </section>
+
+  <!-- Main content: video partially overlapping the header -->
+  <section class="main-content">
+    <div class="video-container">
+      <video controls>
+        <source 
+          src="https://storage.googleapis.com/qrfyprod/6a59b458-96ef-408d-877b-b58521beb877.mp4" 
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+</body>
+</html>
